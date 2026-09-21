@@ -11,7 +11,7 @@ Personal study notes on running and understanding Kubernetes.
 | [extra/2.highly-available.md](extra/2.highly-available.md) | Single-node → multi-master topologies, etcd/Raft, component cheat sheet |
 | [minikube-tutorial/samples.md](minikube-tutorial/samples.md) | minikube setup, multi-node, HA and profiles |
 | [kind-tutorial/samples.md](kind-tutorial/samples.md) | kind (Kubernetes IN Docker) setup and multi-node configs |
-| [small-app-minikube/README.md](small-app-minikube/README.md) | Sample NGINX app on minikube *(stub)* |
+| [small-app-minikube/README.md](small-app-minikube/README.md) | Sample NGINX echo app on minikube (deployment, service, cleanup) |
 | [MUST-KNOWS/production-grade-clusters.md](MUST-KNOWS/production-grade-clusters.md) | Managed services, distributions, tooling, on-prem challenges |
 
 ## Suggested reading order
