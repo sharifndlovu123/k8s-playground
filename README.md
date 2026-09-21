@@ -11,6 +11,7 @@ kubernetes/
 ├── 02-concepts/
 │   ├── kubectl.md
 │   ├── cluster-architecture.md
+│   ├── resource-kinds.md
 │   └── images/
 ├── 03-local-clusters/
 │   ├── minikube.md
@@ -30,6 +31,7 @@ kubernetes/
 | 1 | Getting started | [playgrounds](01-getting-started/playgrounds.md) | Free browser-based Kubernetes sandboxes, no setup |
 | 2 | Concepts | [kubectl](02-concepts/kubectl.md) | Imperative vs declarative `kubectl` |
 | | | [cluster architecture](02-concepts/cluster-architecture.md) | Single-node → multi-master topologies, etcd/Raft, component cheat sheet |
+| | | [resource kinds](02-concepts/resource-kinds.md) | Reference for `kind` / `apiVersion` values (Pod, Deployment, Service, ...) |
 | 3 | Local clusters | [minikube](03-local-clusters/minikube.md) | Setup, multi-node, HA and profiles |
 | | | [kind](03-local-clusters/kind.md) | Kubernetes IN Docker: setup and multi-node configs |
 | 4 | Sample app | [README](04-sample-app/README.md) | NGINX echo app on minikube, imperative and declarative ([manifest](04-sample-app/hello-minikube.yaml)) |
