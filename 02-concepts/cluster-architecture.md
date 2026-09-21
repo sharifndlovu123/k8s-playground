@@ -2,7 +2,7 @@
 
 ## 1. Single-node cluster
 
-![All-in-one node: kubectl talks over HTTP to kube-apiserver, with etcd, scheduler, controller-manager, kube-proxy, kubelet and container runtime all on one node](image.png)
+![All-in-one node: kubectl talks over HTTP to kube-apiserver, with etcd, scheduler, controller-manager, kube-proxy, kubelet and container runtime all on one node](images/single-node-cluster.png)
 
 Running all components on one machine/host is a bad idea, especially for production, but it's fine for testing.
 
@@ -16,7 +16,7 @@ The `minikube` tool makes it easy to set up a single-node k8s cluster on your ma
 
 ## 2. Single-master cluster
 
-![One control plane node connected to three compute nodes, each running kube-proxy, kubelet, a container runtime and containers](image-1.png)
+![One control plane node connected to three compute nodes, each running kube-proxy, kubelet, a container runtime and containers](images/single-master-cluster.png)
 
 One node executes all of the control plane components, with as many compute nodes as you want.
 
@@ -29,7 +29,7 @@ One node executes all of the control plane components, with as many compute node
 
 ## 3. Multi-master, multi-node cluster
 
-![Three control plane nodes and three compute nodes, with a load balancer in front of the kube-apiserver instances](image-2.png)
+![Three control plane nodes and three compute nodes, with a load balancer in front of the kube-apiserver instances](images/multi-master-cluster.png)
 
 The best way: **both the control plane and the compute nodes are replicated.**
 
@@ -47,7 +47,7 @@ Raft ensures a **single leader at all times**, responsible for accepting writes 
 
 > 🧠 Memorize these components and their objectives.
 
-![Table of Kubernetes components, who each communicates with, and its role](image-3.png)
+![Table of Kubernetes components, who each communicates with, and its role](images/components-table.png)
 
 | Component | Communicates with | Role |
 |---|---|---|

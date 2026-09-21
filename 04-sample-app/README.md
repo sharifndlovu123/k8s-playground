@@ -4,7 +4,7 @@ This tutorial shows you how to run a sample app on Kubernetes using minikube. Th
 
 ## Prerequisites
 
-- minikube installed (see [minikube-tutorial](../minikube-tutorial/samples.md))
+- minikube installed (see [minikube guide](../03-local-clusters/minikube.md))
 - `kubectl` installed
 
 ## 1. Start a cluster

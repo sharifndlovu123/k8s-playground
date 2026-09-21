@@ -4,7 +4,7 @@
 
 The whole idea behind kind is to use Docker or Podman containers as Kubernetes nodes, thanks to the Docker-in-Docker (DinD) / containers-in-container model. By launching containers that themselves contain the container engine and the kubelet, it is possible to make them behave as Kubernetes worker nodes.
 
-![kind architecture: the kind CLI on the host uses Docker to start a node container, which runs systemd, kubelet, an inner Docker, the control plane components, CoreDNS and user pods](image.png)
+![kind architecture: the kind CLI on the host uses Docker to start a node container, which runs systemd, kubelet, an inner Docker, the control plane components, CoreDNS and user pods](images/kind-architecture.png)
 
 This is exactly the same as using the Docker driver for minikube, except that there it is not done in a single container but in several. The result is a local multi-node cluster. Like minikube, kind is a free, open-source tool.
 
